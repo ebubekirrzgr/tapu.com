@@ -1,0 +1,46 @@
+.accountPageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 100vh;
+  text-align: left;
+  margin-left: 24px;
+  margin-right: 24px;
+
+  .accountLine {
+    margin-top: 18px;
+    height: 2px;
+    width: 327px;
+    background-color: #64738c;
+  }
+
+  .accountH2Container {
+    width: 330px;
+    text-align: left;
+    margin-left: 15px;
+    > h2 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 42px;
+      letter-spacing: 0.1px;
+      color: #121212;
+    }
+  }
+
+  .accountContainer {
+    margin-top: 34px;
+    width: 330px;
+    margin-left: 10px;
+  }
+
+  .localeContainer {
+    margin-top: 27px;
+  }
+
+  .logOutButton {
+    margin-top: 100px;
+    margin-bottom: 108px;
+  }
+}
