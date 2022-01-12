@@ -44,6 +44,20 @@
         align-items: center;
         justify-content: center;
       }
+      .productPrice {
+        display: flex;
+        flex-direction: row;
+
+        .productDetailPrice {
+          font-weight: bold;
+          font-size: 15px;
+          color: #e7476c;
+        }
+
+        .productDetailPriceP {
+          margin-left: 5px;
+        }
+      }
     }
     .btnAdd {
       width: 155px;

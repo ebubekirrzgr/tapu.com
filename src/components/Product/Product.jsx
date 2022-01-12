@@ -25,6 +25,10 @@ function Product() {
             <img src={distance} alt="distance" />
             <p>3.7 km</p>
           </div>
+          <div className="productPrice">
+            <p className="productDetailPrice">₺</p>
+            <p className="productDetailPriceP">250 TL</p>
+          </div>
         </div>
         <button className="btnAdd" type="submit">
           <img src={add} alt="add" /> SEPETE EKLE
