@@ -3,6 +3,7 @@
   flex-direction: column;
 
   .accountH3 {
+    margin-left: -1px;
     font-weight: bold;
     font-size: 36px;
     line-height: 49px;
@@ -11,6 +12,7 @@
   }
 
   .accountDetail {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
 

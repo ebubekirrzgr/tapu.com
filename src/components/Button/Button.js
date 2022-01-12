@@ -6,11 +6,11 @@ const theme = {
     font: '#FFFFFF',
   },
   secondary: {
-    backgroundColor: '#F0F8FF',
-    font: '#4B9CE2',
+    backgroundColor: '#E82223',
+    font: '#FFFFFF',
   },
   logOut: {
-    backgroundColor: '#E5E5E5',
+    backgroundColor: '#FFFFFF',
     font: '#E82223',
   },
 };

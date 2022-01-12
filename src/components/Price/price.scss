@@ -1,4 +1,6 @@
 .priceWrapper {
+  display: flex;
+  flex-direction: column;
   .priceH3 {
     font-weight: bold;
     font-size: 24px;
@@ -12,13 +14,19 @@
     flex-direction: row;
     p {
       font-size: 14px;
-      line-height: 0px;
+      font-weight: 600;
+      height: 28px;
       letter-spacing: 0.1px;
     }
   }
 
   .priceH4 {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
     letter-spacing: 0.1px;
+  }
+
+  .priceTotal {
+    margin-top: 20px;
   }
 }

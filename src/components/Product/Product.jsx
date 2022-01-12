@@ -26,8 +26,7 @@ function Product() {
             <p>3.7 km</p>
           </div>
         </div>
-        <button className="btnAdd">
-          {' '}
+        <button className="btnAdd" type="submit">
           <img src={add} alt="add" /> SEPETE EKLE
         </button>
       </div>
