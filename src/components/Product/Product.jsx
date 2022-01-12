@@ -15,7 +15,7 @@ function Product() {
       </div>
       <div className="productDetail">
         <h5 className="productName">Villa Bosphorus</h5>
-        <p className="productDetailP">Lorem İpsum Sit Dolor Met</p>
+        <p className="productDetailP">Lorem Ipsum Sit Dolor Met</p>
         <div className="detail">
           <div className="star">
             <img src={star} alt="star" />

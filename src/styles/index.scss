@@ -1,6 +1,10 @@
 @import './reset';
 @import './variables';
 
+* {
+  font-family: $font-family !important;
+}
+
 body {
   background-color: $background;
 }
