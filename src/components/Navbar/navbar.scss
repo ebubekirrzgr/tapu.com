@@ -18,6 +18,7 @@
     font-weight: 500;
     font-family: 'SFProDisplay' !important;
     letter-spacing: 0.04em;
+    margin-top: 5px;
   }
   .navbarList,
   .navbarAccount {
@@ -30,6 +31,7 @@
   }
   .navbarList {
     margin-left: 28.5%;
+
     img {
       width: 18px;
       height: 18px;
@@ -41,6 +43,19 @@
     img {
       width: 24px;
       height: 24px;
+    }
+  }
+
+  .navbarAccount,
+  .navbarList {
+    a {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:visited {
+        color: #000000;
+      }
     }
   }
 }
