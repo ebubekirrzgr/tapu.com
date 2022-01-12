@@ -1,13 +1,23 @@
 .productWrapper {
-  display: flex;
-  flex-direction: row;
-  height: 120px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  justify-items: center;
+
+  .product {
+    display: flex;
+    width: 300px;
+  }
 
   .productDetail {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 300px;
+
     .productName {
       font-weight: 600;
       line-height: 24px;
@@ -16,6 +26,7 @@
       margin: 0;
       color: #121212;
     }
+
     .productDetailP {
       margin: 5px 0 0 0;
       font-weight: normal;
@@ -24,6 +35,7 @@
       letter-spacing: 0.2px;
       color: #64738c;
     }
+
     .detail {
       margin: 10px 0 0 0;
       display: flex;

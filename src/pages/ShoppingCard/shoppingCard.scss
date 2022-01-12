@@ -4,7 +4,12 @@
   align-items: center;
   justify-content: center;
   width: 80%;
-  height: 100vh;
+  margin: 100px auto;
+
+  .productListContainer {
+    width: 100%;
+    height: 75%;
+  }
 
   .shoppingCardLine {
     margin-top: 17px;
