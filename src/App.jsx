@@ -1,5 +1,6 @@
 import './App.scss';
-import Account from './components/Account/Account';
+import React from 'react';
+import Account from './components/Account';
 
 function App() {
   return (
