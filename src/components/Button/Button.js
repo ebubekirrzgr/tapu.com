@@ -43,6 +43,8 @@ const StyledButton = styled.button`
 `;
 StyledButton.defaultProps = {
   theme: 'primary',
+  border: 'off',
+  size: 'default',
 };
 
 export default StyledButton;
