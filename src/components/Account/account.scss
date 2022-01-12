@@ -1,0 +1,32 @@
+.accountWrapper {
+  display: flex;
+  flex-direction: column;
+
+  .accountH3 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: 0.1px;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .accountDetail {
+    display: flex;
+    flex-direction: column;
+
+    .accountMail,
+    .accountPassword,
+    .accountLocale {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .accountP,
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 29px;
+      letter-spacing: 0.04em;
+    }
+  }
+}
