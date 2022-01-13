@@ -3,13 +3,13 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
-import productsReducer from '../redux/reducers/products';
+import rootReducer from '../redux/reducers';
 
 const middleware =
   process.env.NODE_ENV === 'production'
     ? applyMiddleware(thunk)
     : composeWithDevTools(applyMiddleware(thunk, logger));
 
-const store = createStore(productsReducer, middleware);
+const store = createStore(rootReducer, middleware);
 
 export default store;

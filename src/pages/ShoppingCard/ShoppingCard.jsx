@@ -2,6 +2,7 @@ import './shoppingCard.scss';
 
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import fetchProducts from '../../redux/actions/products';
 import Product from '../../components/Product';
 import Price from '../../components/Price';
@@ -9,11 +10,19 @@ import Price from '../../components/Price';
 import spinner from '../../assets/spinner.gif';
 
 function ShoppingCard() {
-  const { isFetching, isError } = useSelector((state) => state);
+  const { isFetching, isError } = useSelector((state) => state.products);
 
   const dispatch = useDispatch();
 
+  const signIn = useSelector((state) => state.signIn);
+  const navigate = useNavigate();
+
   useEffect(() => {
+    if (signIn.signInData.email) {
+      navigate('/Home');
+    } else {
+      navigate('/SignIn');
+    }
     let mounted = true;
 
     if (mounted) {
@@ -23,7 +32,7 @@ function ShoppingCard() {
     return () => {
       mounted = false;
     };
-  }, [dispatch]);
+  }, [dispatch, navigate, signIn.signInData.email]);
 
   if (isFetching)
     return (

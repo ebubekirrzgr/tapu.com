@@ -5,14 +5,16 @@
 
   .formMail,
   .formPassword {
-    height: 33px;
     border-bottom: 1px solid #bbc3cf;
+    height: 33px;
     padding: 1px;
+    position: relative;
   }
-  .formPassword {
-    margin-top: 55px;
+  .formMail,
+  .errorFormMail {
+    margin-bottom: 55px;
   }
-  input {
+  .defaultInput {
     width: 99%;
     height: 99%;
     border: none;
@@ -25,4 +27,31 @@
       color: #64738c;
     }
   }
+  .errorInput {
+    width: 99%;
+    height: 99%;
+    border: none;
+    color: red;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    background-color: transparent;
+    &::placeholder {
+      color: red;
+    }
+  }
+  .errorFormMail,
+  .errorFormPassword {
+    border-bottom: 1px solid red;
+    height: 33px;
+    padding: 1px;
+    position: relative;
+  }
+}
+
+.errorText {
+  position: absolute;
+  bottom: -20px;
+  font-size: 12px;
+  color: red;
 }

@@ -12,7 +12,7 @@ import fetchProducts from '../../redux/actions/products';
 
 function Product() {
   const dispatch = useDispatch();
-  const products = useSelector((state) => state);
+  const products = useSelector((state) => state.products);
 
   useEffect(() => {
     if (products?.productsData.length === 0) {

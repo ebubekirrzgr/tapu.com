@@ -1,12 +1,25 @@
 import './account.scss';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import AccountComponent from '../../components/Account';
 import Location from '../../components/Location';
 import Button from '../../components/Button/Button';
 
 function Account() {
+  const signIn = useSelector((state) => state.signIn);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (signIn.signInData.email) {
+      navigate('/Account');
+    } else {
+      navigate('/signin');
+    }
+  }, [navigate, signIn.signInData.email]);
+
   return (
     <div className="accountPageWrapper">
       <div className="accountH2Container">
